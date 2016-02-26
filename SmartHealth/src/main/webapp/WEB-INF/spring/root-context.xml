@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="loginValidator" class="com.me.validator.LoginValidator"></bean>
+	<bean id="dailyRecordValidator" class="com.me.validator.DailyRecordValidator"></bean>
+	<bean id="doctorValidator" class="com.me.validator.DoctorValidator"></bean>
+	<bean id="financeManagerValidator" class="com.me.validator.HospitalFinanceManagerValidator"></bean>
+	<bean id="hospitalValidator" class="com.me.validator.HospitalValidator"></bean>
+	<bean id="invoiceValidator" class="com.me.validator.InvoiceValidator"></bean>
+	<bean id="messageValidator" class="com.me.validator.MessageValidator"></bean>
+	<bean id="monthlyRecordValidator" class="com.me.validator.MonthlyRecordValidator"></bean>
+	<bean id="reportValidator" class="com.me.validator.ReportValidator"></bean>
+	<bean id="smartIdValidator" class="com.me.validator.SmartIdValidator"></bean>
+	<bean id="userDao" class="com.me.dao.UserDao" ></bean>
+		
+</beans>

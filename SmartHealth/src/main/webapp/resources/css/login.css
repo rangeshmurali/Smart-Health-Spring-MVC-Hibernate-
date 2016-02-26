@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+body{
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("background.jpg");
+    background-repeat:repeat;
+}
+#panel-heading {
+    padding: 5px 15px;
+}
+
+#panel-footer {
+	padding: 1px 15px;
+	color: #A0A0A0;
+}
+
+#profile-img {
+	width: 96px;
+	height: 96px;
+	margin: 0 auto 10px;
+	display: block;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+

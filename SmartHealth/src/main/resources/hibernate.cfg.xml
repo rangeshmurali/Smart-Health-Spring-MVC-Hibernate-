@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/webtools</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+        <property name="hibernate.show_sql">true</property>
+        <mapping class="com.me.model.Login"></mapping>
+        <mapping class="com.me.model.SmartId"></mapping>
+        <mapping class="com.me.model.DailyRecord"></mapping>
+        <mapping class="com.me.model.MonthlyRecord"></mapping>
+        <mapping class="com.me.model.Hospital"></mapping>
+        <mapping class="com.me.model.Doctor"></mapping>
+        <mapping class="com.me.model.Report"></mapping>
+        <mapping class="com.me.model.HospitalFinanceManager"></mapping>
+        <mapping class="com.me.model.Invoice"></mapping>
+        <mapping class="com.me.model.Message"></mapping>
+    </session-factory>
+</hibernate-configuration>
